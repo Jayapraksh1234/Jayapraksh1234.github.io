@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidya Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="logo.png" alt="Vidya Logo" class="logo" style="width: 150px; height: auto;border-radius: 50%;width: 40px;height: 40px;"></a>
+            <div class="search-panel">
+                <input type="text" id="courseSearch" placeholder="Search courses...">
+                <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                </button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Learn Anything, Anytime, Anywhere</h1>
+            <p>Join millions of learners from around the world already learning on Vidya.</p>
+            <a href="courses.html" class="cta-button">Browse Courses</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>Expert Instructors</h2>
+                <p>Learn from industry experts with real-world experience.</p>
+            </div>
+            <div class="feature">
+                <h2>Flexible Learning</h2>
+                <p>Learn at your own pace with self-paced and live courses.</p>
+            </div>
+            <div class="feature">
+                <h2>Certification</h2>
+                <p>Earn certificates and showcase your skills to the world.</p>
+            </div>
+        </section>
+
+        <section class="popular-courses">
+            <h2>Popular Courses</h2>
+            <div class="course-grid">
+                <div class="course-card" data-course="course1">
+                    <img src="python.jpeg" alt="Introduction to Python">
+                    <h3>Introduction to Python</h3>
+                    <p>Learn Python programming from scratch.</p>
+                    <a href="#" class="button learn-more">Learn More</a>
+                </div>
+                <div class="course-card" data-course="course2">
+                    <img src="data science.jpeg" alt="Data Science Essentials">
+                    <h3>Data Science Essentials</h3>
+                    <p>Master the basics of data science with hands-on projects.</p>
+                    <a href="#" class="button learn-more">Learn More</a>
+                </div>
+                <div class="course-card" data-course="course3">
+                    <img src="web development.jpeg" alt="Web Development">
+                    <h3>Web Development</h3>
+                    <p>Become a full-stack web developer with this comprehensive course.</p>
+                    <a href="#" class="button learn-more">Learn More</a>
+                </div>
+                <div class="course-card" data-course="course4">
+                    <img src="ml.jpeg" alt="Machine Learning with Python">
+                    <h3>Machine Learning with Python</h3>
+                    <p>Explore the world of machine learning with Python.</p>
+                    <a href="#" class="button learn-more">Learn More</a>
+                </div>
+                <div class="course-card" data-course="course5">
+                    <img src="cyber.jpeg" alt="Cybersecurity Fundamentals">
+                    <h3>Cybersecurity Fundamentals</h3>
+                    <p>Understand the basics of cybersecurity and protect your data.</p>
+                    <a href="#" class="button learn-more">Learn More</a>
+                </div>
+                <div class="course-card" data-course="course6">
+                    <img src="marketing.png" alt="Digital Marketing Strategies">
+                    <h3>Digital Marketing Strategies</h3>
+                    <p>Learn the latest digital marketing techniques and strategies.</p>
+                    <a href="#" class="button learn-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-details" id="course-details" style="display: none;">
+            <h2 id="course-title"></h2>
+            <img id="course-image" src="" alt="Course Image">
+            <p id="course-description"></p>
+            <p id="course-instructor"></p>
+            <p id="course-duration"></p>
+            <a href="#" class="button">Enroll Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vidya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
