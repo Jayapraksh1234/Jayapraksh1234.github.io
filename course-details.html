@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Vidya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="logo.png" alt="Vidya Logo" class="logo" style="width: 150px; height: auto;border-radius: 50%;width: 40px;height: 40px;"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="course-details-section-1" class="course-details-section" style="display: none;">
+            <h1>Introduction to Python</h1>
+            <p><strong>Instructor:</strong> John Doe</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <h2>Course Overview</h2>
+            <p>Learn Python programming from scratch.</p>
+            <button id="enroll-button-1" class="enroll-button" data-title="Introduction to Python">Enroll Now</button>
+        </section>
+        <section id="course-details-section-2" class="course-details-section" style="display: none;">
+            <h1>Data Science Essentials</h1>
+            <p><strong>Instructor:</strong> Vara Prasad</p>
+            <p><strong>Duration:</strong> 15 weeks</p>
+            <h2>Course Overview</h2>
+            <p>Master the basics of data science with hands-on projects.</p>
+            <button id="enroll-button-2" class="enroll-button" data-title="Data Science Essentials">Enroll Now</button>
+        </section>
+        <section id="course-details-section-3" class="course-details-section" style="display: none;">
+            <h1>Web Development</h1>
+            <p><strong>Instructor:</strong> Raj Kumar</p>
+            <p><strong>Duration:</strong> 9 weeks</p>
+            <h2>Course Overview</h2>
+            <p>Become a full-stack web developer with this comprehensive course.</p>
+            <button id="enroll-button-3" class="enroll-button" data-title="Web Development">Enroll Now</button>
+        </section>
+        <section id="course-details-section-4" class="course-details-section" style="display: none;">
+            <h1>Machine Learning with Python</h1>
+            <p><strong>Instructor:</strong> Lokesh Yadav</p>
+            <p><strong>Duration:</strong> 5 weeks</p>
+            <h2>Course Overview</h2>
+            <p>Explore the world of machine learning with Python.</p>
+            <button id="enroll-button-4" class="enroll-button" data-title="Machine Learning with Python">Enroll Now</button>
+        </section>
+        <section id="course-details-section-5" class="course-details-section" style="display: none;">
+            <h1>Cybersecurity Fundamentals</h1>
+            <p><strong>Instructor:</strong> Ganesh Reddy</p>
+            <p><strong>Duration:</strong> 15 weeks</p>
+            <h2>Course Overview</h2>
+            <p>Understand the basics of cybersecurity and protect your data.</p>
+            <button id="enroll-button-5" class="enroll-button" data-title="Cybersecurity Fundamentals">Enroll Now</button>
+        </section>
+        <section id="course-details-section-6" class="course-details-section" style="display: none;">
+            <h1>Digital Marketing Strategies</h1>
+            <p><strong>Instructor:</strong> Abdul Rehman</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <h2>Course Overview</h2>
+            <p>Learn the latest digital marketing techniques and strategies.</p>
+            <button id="enroll-button-6" class="enroll-button" data-title="Digital Marketing Strategies">Enroll Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vidya. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Show only the relevant course details
+        function showCourseDetails() {
+            const courseId = getQueryParam('id');
+            if (courseId) {
+                const section = document.getElementById(`course-details-section-${courseId}`);
+                if (section) {
+                    section.style.display = 'block';  // Display only the relevant section
+                } else {
+                    document.body.innerHTML = '<p>Course not found.</p>';
+                }
+            } else {
+                // Handle case where no id is present, maybe show an error or redirect
+                document.body.innerHTML = '<p>Course not found.</p>';
+            }
+        }
+
+        // Show notification when Enroll Now button is clicked
+        function setupEnrollButtons() {
+            const enrollButtons = document.querySelectorAll('.enroll-button');
+            enrollButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const courseTitle = this.getAttribute('data-title');
+                    alert(`You have successfully enrolled in the ${courseTitle} course!`);
+                });
+            });
+        }
+
+        // Call the functions on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            showCourseDetails();
+            setupEnrollButtons();
+        });
+    </script>
+</body>
+</html>
