@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -88,7 +88,6 @@ header ul li a:active {
     color: #0eb64e;
 }
 
-/* Hero Section */
 .hero {
     background: url('hero-banner.jpg') no-repeat center center/cover;
     color: rgb(255, 166, 0);
@@ -121,7 +120,7 @@ header ul li a:active {
     background-color: #e65c00;
 }
 
-/* Features Section */
+
 .features {
     display: flex;
     justify-content: space-between;
@@ -150,7 +149,7 @@ header ul li a:active {
     color: #666;
 }
 
-/* Courses Section */
+
 .courses-section {
     padding: 40px;
     background-color: #f1f1f1;
@@ -212,7 +211,7 @@ header ul li a:active {
 }
 
 
-/* Course Details Section */
+
 .course-details-section {
     padding: 40px;
     background-color: #f1f1f1;
@@ -259,7 +258,7 @@ header ul li a:active {
     background-color: #218838;
 }
 
-/* Hide course details section by default */
+
 .course-details {
     display: none;
     padding: 40px;
@@ -298,7 +297,6 @@ header ul li a:active {
 }
 
 
-/* Dashboard Styles */
 .dashboard {
     max-width: 1200px;
     margin: 50px auto;
@@ -350,7 +348,6 @@ header ul li a:active {
     text-decoration: underline;
 }
 
-/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
@@ -364,7 +361,6 @@ footer p {
     margin:0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
@@ -386,7 +382,7 @@ footer p {
     }
 }
 
-/* Login Section */
+
 .login-section {
     display: flex;
     justify-content: center;
@@ -458,7 +454,7 @@ footer p {
     text-decoration: underline;
 }
 
-/* Contact Us Section */
+
 .contact-section {
     display: flex;
     justify-content: center;
@@ -526,7 +522,7 @@ footer p {
     background-color: #003399;
 }
 
-/* Make sure the body and html take full height */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -535,7 +531,7 @@ html, body {
     flex-direction: column;
 }
 
-/* The wrapper div holds the content and pushes the footer to the bottom if necessary */
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -543,7 +539,7 @@ html, body {
     min-height: 100vh;
 }
 
-/* Ensure the main content takes up available space */
+
 main {
     flex: 1;
     padding: 40px;
@@ -562,7 +558,6 @@ main {
     color: #4CAF50;
 }
 
-/* Team Section */
 .team-section {
     margin-top: 40px;
 }
@@ -597,7 +592,6 @@ main {
     color: #777;
 }
 
-/* Testimonials Section */
 .testimonials-section {
     margin-top: 40px;
 }
@@ -624,7 +618,6 @@ main {
     color: #777;
 }
 
-/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
@@ -648,7 +641,6 @@ footer .social-links a:hover {
     color: #4CAF50;
 }
 
-/* Footer styling */
 about footer {
     background-color: #333;
     color: #fff;
